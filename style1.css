@@ -1,0 +1,318 @@
+@font-face{
+    font-family: Psychoart;
+    src: url(/assets/fonts/Psychoart.woff);
+    }
+@font-face{
+    font-family: Boecklins;
+    src: url(/assets/fonts/Boecklins.woff);
+    }
+@font-face{
+    font-family: Nerea;
+    src: url(/assets/fonts/woff/Nerea.woff);
+    }
+
+@font-face{
+  font-family: Wello;
+  src: url(/assets/fonts/woff/welothin.woff);
+  }
+@font-face{
+  font-family: metroC;
+  src: url(/assets/fonts/woff/MetropolitainContour.woff);
+  }
+
+  :root{
+       --fnt-title: 'metroC', sans-serif;
+       --fnt-text: 'Nerea',sans-serif;
+       --fnt-text1: 'Wello',sans-serif;
+       /* colors */
+       --txt-color1:hsl(212, 61%, 17%);
+       --tit-color:hsl(163, 65%, 15%);
+      --bg-color: #F5F3E7;
+   }
+body {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: #4A3D34;
+}
+
+header, main, footer {
+    padding: 20px;
+    margin: 10px;
+    background-color: #E4D8B4;
+    border: 2px solid #8A7A63;
+    display: block;
+}
+ /* Stijlen voor logo met dubbele omlijning en sierlijke hoeken */
+ .logo {
+    position: relative;
+    padding: 5px 1em 0 2em;
+    background-color: #F7F2E0;
+    border: 3px solid #8A7A63;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 5px #D7C9A3;
+}
+
+.logo::before, .logo::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 3px solid #8A7A63;
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+.logo::after {
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    bottom: -16px;
+    border: 3px solid #8A7A63;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sierlijke hoeken toevoegen */
+.logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    width: calc(100% + 32px);
+    height: calc(100% + 32px);
+    border-radius: 20px;
+    border: 3px solid #8A7A63;
+    box-sizing: border-box;
+    pointer-events: none;
+    background: 
+        linear-gradient(135deg, transparent 75%, #9a8407 75%) top left,
+        linear-gradient(-135deg, transparent 75%, #F5F3E7 75%) top right,
+        linear-gradient(-45deg, transparent 75%, #F5F3E7 75%) bottom left,
+        linear-gradient(45deg, transparent 75%, #d2283c 75%) bottom right;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+.midden{
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: var(--fnt-title);
+    background-color: var(--tit-color);
+    color: transparent;
+    letter-spacing: .2rem;
+    text-shadow: 0px 2px 3px rgba(227, 140, 33, 0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+  }
+  .extra{
+    font-size: 4rem;
+    padding-left:2%;
+    font-family: var(--fnt-title);
+    background-color: var(--tit-color);
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(210, 45, 14, 0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+        background-clip: text;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color:rgb(124, 149, 183);
+  }
+  .text-divider-bg {
+    max-width: 700px;
+    background: linear-gradient(to right, #952222, transparent);
+    height: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.text-divider-bg span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    top: -10px;
+}
+  /*Grid setup voor header en footer */
+.header-grid, .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-grid {
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Grid setup voor main sectie */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Stijlen voor knoppen in de header */
+.header-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-buttons a {
+    padding: 10px 20px;
+    background-color: #F7F2E0;
+    border: 2px solid #8A7A63;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #4A3D34;
+    font-family: 'Garamond', serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.header-buttons a:hover {
+    background-color: #D7C9A3;
+}
+
+/* Stijlen voor grid-items in de main sectie */
+.main-grid .grid-item {
+    padding: 20px;
+    background-color: #F7F2E0;
+    border: 2px solid #8A7A63;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Garamond', serif;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Stijlen voor de footer */
+.footer-copyright {
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #4A3D34;
+    font-family: 'Garamond', serif;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    /* background: #3B5998;*/
+    color: rgb(42, 8, 8);
+  }
+.grid-item-left{
+    background-color: #FA9A2C;
+}  
+  .letter {
+  /* position: absolute; */
+  margin-left: 4rem;
+  display: grid;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  h1{
+    background: url(/01-HBELAND-main/assets/images/artnouveau9.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 8.75rem;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @container (min-width: 200px) {
+    .letter:nth-child(1) {
+      top: 20px;
+      left: 30px;
+      /* font-size: 5rem; */
+      color: var(--tit-color);
+    }
+  
+    .letter:nth-child(2) {
+      bottom: 20px;
+      right: 30px;
+      /* font-size: 5rem; */
+      color: var(--tit-color);
+    }
+  }
+
+/* Media-queries voor extra responsiviteit */
+@media (max-width: 800px) {
+    .header-grid, .footer-grid, .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* .letter-container {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+} */
+/* 
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
