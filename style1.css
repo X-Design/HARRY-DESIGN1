@@ -21,13 +21,13 @@
   }
 
   :root{
-       --fnt-title: 'metroC', sans-serif;
-       --fnt-text: 'Nerea',sans-serif;
-       --fnt-text1: 'Wello',sans-serif;
-       /* colors */
-       --txt-color1:hsl(212, 61%, 17%);
-       --tit-color:hsl(163, 65%, 15%);
-      --bg-color: #F5F3E7;
+    --fnt-title: 'metroC', sans-serif;
+    --fnt-text: 'Nerea',sans-serif;
+    --fnt-text1: 'Wello',sans-serif;
+     /* colors */
+    --txt-color1:hsl(212, 61%, 17%);
+    --tit-color:hsl(163, 65%, 15%);
+    --bg-color: #F5F3E7;
    }
 body {
     font-family: 'Century Gothic', Arial, sans-serif;
@@ -87,8 +87,8 @@ header, main, footer {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 16px;
-    border: 2px solid transparent;
+    border-radius: 2rem;
+    border: 0.3125rem solid transparent;
     pointer-events: none;
     box-sizing: border-box;
 }
@@ -113,9 +113,9 @@ header, main, footer {
     background-repeat: no-repeat;
 }
 .midden{
-    padding-left: 3rem;
+    padding-left: -3rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     font-size: 1.5rem;
     font-family: var(--fnt-title);
     background-color: var(--tit-color);
