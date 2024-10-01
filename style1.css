@@ -19,11 +19,16 @@
   font-family: metroC;
   src: url(/assets/fonts/woff/MetropolitainContour.woff);
   }
+@font-face{
+  font-family: Caroline;
+  src: url(/assets/fonts/woff/Caroline.woff);
+  }
 
   :root{
     --fnt-title: 'metroC', sans-serif;
     --fnt-text: 'Nerea',sans-serif;
     --fnt-text1: 'Wello',sans-serif;
+    --fnt-extra: 'Caroline',sans-serif;
      /* colors */
     --txt-color1:hsl(212, 61%, 17%);
     --tit-color:hsl(163, 65%, 15%);
@@ -248,24 +253,33 @@ header, main, footer {
     color: rgb(42, 8, 8);
   }
 .grid-item-left{
-    background-color: #FA9A2C;
+    background-color: var(--bg-color);
+
 }  
   .letter {
-  /* position: absolute; */
-  margin-left: 4rem;
-  display: grid;
+  position: absolute;
+  margin-left: 45px;
+  /* display: grid;
   align-items: center;
-  font-size: 5rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+  font-size: 5rem; */
+/* color: white;   */
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  } 
+
   h1{
-    background: url(/01-HBELAND-main/assets/images/artnouveau9.jpg);
+    font-family: var(--fnt-title);
+    display: inline-block;
+    /* margin: 0; */
+    font-size: 5rem;
+    background-color: #2f8d46;
+    background-image: url(/assets/images/artnouveau9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 8.75rem;
-    -webkit-text-fill-color: transparent;
-  }
+}
   
   @container (min-width: 200px) {
     .letter:nth-child(1) {
