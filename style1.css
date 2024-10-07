@@ -253,15 +253,19 @@ header, main, footer {
     color: rgb(42, 8, 8);
   }
 .grid-item-left{
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }  
   .letter {
-  position: absolute;
-  margin-left: 45px;
-  /* display: grid;
+  /* position: absolute;
+  margin-left: 45px; */
+  display: flex;
   align-items: center;
-  font-size: 5rem; */
+  /* align-items: center; */
+  font-size: 5rem;
 /* color: white;   */
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   } 
