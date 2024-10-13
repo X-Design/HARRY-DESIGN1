@@ -203,7 +203,7 @@ header, main, footer {
 .main-grid .grid-item {
     padding: 20px;
     background-color: #F7F2E0;
-    border: 2px solid #8A7A63;
+    border: 2px solid var(--tit-color);
     border-radius: 8px;
     text-align: center;
     font-family: 'Garamond', serif;
@@ -213,7 +213,7 @@ header, main, footer {
 .main-grid img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Stijlen voor de footer */
@@ -257,16 +257,11 @@ header, main, footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border-radius: 15px;
+  border: 2px solid var(--tit-color);
 }  
   .letter {
-  /* position: absolute;
-  margin-left: 45px; */
-  display: flex;
-  align-items: center;
-  /* align-items: center; */
   font-size: 5rem;
-/* color: white;   */
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   } 
 
@@ -275,12 +270,12 @@ header, main, footer {
     display: inline-block;
     /* margin: 0; */
     font-size: 5rem;
-    background-color: #2f8d46;
+    /* background-color: #2f8d46;
     background-image: url(/assets/images/artnouveau9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    color: transparent;
+    background-position: center; */
+    /* color: transparent; */
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -298,6 +293,9 @@ header, main, footer {
       right: 30px;
       /* font-size: 5rem; */
       color: var(--tit-color);
+    }
+    .letter{
+      font-size: calc();
     }
   }
 
