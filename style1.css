@@ -261,7 +261,8 @@ header, main, footer {
   border: 2px solid var(--tit-color);
 }  
   .letter {
-  font-size: 5rem;
+  font-size: clamp(16px, calc(1vw + 1em), 24px);
+  /* font-size: clamp(1.5rem,5vw + 0,5rem,15rem); */
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   } 
 
@@ -313,6 +314,20 @@ header, main, footer {
     .footer-social {
         justify-content: center;
     }
+    .header-buttons {
+    margin:1rem;
+    width: 50%;
+
+    }
+  .logo{
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+    height:75%;
+  }
+  .midden .extra{
+   font-size: clamp(16px, calc(1vw + 1em), 24px);
+  }
 }
 
 /* .letter-container {
