@@ -213,7 +213,10 @@ header, main, footer {
 .main-grid img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.main-grid{
+   box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 /* Stijlen voor de footer */
@@ -261,7 +264,7 @@ header, main, footer {
   border: 2px solid var(--tit-color);
 }  
   .letter {
-  font-size: clamp(16px, calc(1vw + 1em), 24px);
+  font-size: clamp(3rem, calc(1vw + 1em), 1.5rem);
   /* font-size: clamp(1.5rem,5vw + 0,5rem,15rem); */
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   } 
@@ -285,21 +288,25 @@ header, main, footer {
     .letter:nth-child(1) {
       top: 20px;
       left: 30px;
-      /* font-size: 5rem; */
       color: var(--tit-color);
     }
   
     .letter:nth-child(2) {
       bottom: 20px;
       right: 30px;
-      /* font-size: 5rem; */
       color: var(--tit-color);
     }
     .letter{
-      font-size: calc();
+      font-size: clamp(1rem, calc(1vw + 1em), 1.5rem);
     }
+    .grid-item-left{
+    background-color: #952222;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, calc(1vw + 1em), 1.5rem);
   }
-
+  }
 /* Media-queries voor extra responsiviteit */
 @media (max-width: 800px) {
     .header-grid, .footer-grid, .main-grid {
@@ -317,7 +324,6 @@ header, main, footer {
     .header-buttons {
     margin:1rem;
     width: 50%;
-
     }
   .logo{
     display: flex;
@@ -326,10 +332,14 @@ header, main, footer {
     height:75%;
   }
   .midden .extra{
-   font-size: clamp(16px, calc(1vw + 1em), 24px);
+   /* font-size: clamp(1rem, calc(1vw + 1em), 1.5rem); */
+  }
+  .grid-item-left{
+    /* background-color: #952222; */
+    font-size: clamp(1rem, calc(1vw + 1em), 1.5rem);
   }
 }
-
+  
 /* .letter-container {
   display: inline-block;
   position: relative;
