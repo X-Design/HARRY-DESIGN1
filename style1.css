@@ -264,7 +264,7 @@ header, main, footer {
   border: 2px solid var(--tit-color);
 }  
   .letter {
-  font-size: clamp(3rem, calc(1vw + 1em), 1.5rem);
+  font-size: clamp(6rem, calc(1vw + 1em), 1.5rem);
   /* font-size: clamp(1.5rem,5vw + 0,5rem,15rem); */
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   } 
@@ -273,7 +273,7 @@ header, main, footer {
     font-family: var(--fnt-title);
     display: inline-block;
     /* margin: 0; */
-    font-size: 5rem;
+    font-size: 80px;
     /* background-color: #2f8d46;
     background-image: url(/assets/images/artnouveau9.jpg);
     background-repeat: no-repeat;
@@ -304,7 +304,7 @@ header, main, footer {
      display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1rem, calc(1vw + 1em), 1.5rem);
+    font-size: clamp(16px, calc(1vw + 1em), 1.5rem);
   }
   }
 /* Media-queries voor extra responsiviteit */
