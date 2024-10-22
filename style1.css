@@ -209,7 +209,14 @@ header, main, footer {
     font-family: 'Garamond', serif;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-
+.grid-item-right{
+   background-color: #a0245e;
+   border-color: #8A7A63;
+   display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 4px;
+}
 .main-grid img {
     width: 100%;
     border-radius: 8px;
@@ -283,7 +290,12 @@ header, main, footer {
     -webkit-background-clip: text;
     background-clip: text;
 }
-  
+  .inhoud{
+    font-family: var(--fnt-text1);
+    font-size: 1rem;
+    color: var(--tit-color);
+    font-weight: 600;
+  }
   @container (min-width: 200px) {
     .letter:nth-child(1) {
       top: 20px;
